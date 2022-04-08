@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fake Pizza</title>
+    <link rel="stylesheet" href=".src/style.css">
+</head>
+<body>
+    <header>
+        <ul>
+            <li><h1>bl4cktux89</h1></li>
+            <li><h2>fake pizza</h2></li>
+        </ul>
+    </header>
+
+    <section>
+        <form>
+            <h3>escolha o sabor:</h3>
+            <ul>
+                <li><input type="radio" id="muçarela" name="pizzas"><label for="muçarela">muçarela</label></li>
+                <li><input type="radio" id="mista" name="pizzas"><label for="mista">mista</label></li>
+                <li><input type="radio" id="calabresa" name="pizzas"><label for="calabresa">calabresa</label></li>
+                </li>
+            </ul> 
+        </form>
+    </section>
+
+    <section>
+        <button id="vendas">vendas</button><button id="estorno">estorno</button>
+    </section>
+
+    <section id="table">
+        <table>
+            <tr>
+                <th>sabores</th><th>quantidade</th><th>valores</th>
+            </tr>
+            <tr>
+                <td>muçarela</td><td id="resultadoMuçarela"></td><td id="vendaMuçarela"></td>
+            </tr>
+            <tr>
+                <td>mista</td><td id="resultadoMista"></td><td id="vendaMista"></td>
+            </tr>
+            <tr>
+                <td>calabresa</td><td id="resultadoCalabresa"></td><td id="vendaCalabresa"></td>
+            </tr>
+        </table>
+    </section>
+
+    <script src="tableToExcel.js"></script>
+    <script src="javascript.js"></script>
+</body>
+</html>
